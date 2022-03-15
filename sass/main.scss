@@ -1,0 +1,346 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+header {
+  width: 100%;
+  padding: 0 7%;
+  font-family: "Mulish", sans-serif;
+  nav {
+    width: 100%;
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 23px;
+        height: 23px;
+      }
+      h4 {
+        padding-left: 6px;
+        font-size: 22px;
+      }
+    }
+    .nav_left {
+      display: flex;
+      align-items: center;
+      column-gap: 6%;
+      ol {
+        display: flex;
+        list-style: none;
+        column-gap: 2vw;
+        li {
+          color: #151a1e;
+          font-size: 15px;
+          font-weight: 700;
+        }
+      }
+    }
+    .nav_right {
+      display: flex;
+      align-items: center;
+      column-gap: 1vw;
+
+      ol {
+        display: flex;
+        list-style: none;
+        column-gap: 2vw;
+        li {
+          color: #151a1e;
+          font-size: 15px;
+          font-weight: 700;
+        }
+      }
+      button {
+        padding: 10px 22px;
+        border: none;
+        font-size: 15px;
+        color: #e5edff;
+        background-color: #2250f4;
+        border-radius: 6px;
+      }
+    }
+    .burger {
+      display: none;
+    }
+  }
+  // hero ----------------------------
+  .hero {
+    display: flex;
+    justify-content: space-between;
+
+    .hero_left {
+      h2 {
+        font-size: 400%;
+        padding-top: 130px;
+        color: #151a1e;
+        font-weight: 900;
+      }
+      p {
+        font-size: 150%;
+        color: #151a1e;
+        padding-top: 32px;
+        width: max-content;
+      }
+      .btns {
+        padding-top: 36px;
+        button {
+          padding: 8px 24px;
+          font-size: 16px;
+          color: #e5edff;
+          background-color: #2250f4;
+          border: none;
+          border-radius: 6px;
+        }
+        a {
+          font-size: 16px;
+          color: #151a1e;
+          padding-left: 24px;
+          font-weight: bold;
+        }
+      }
+    }
+    .hero_right {
+      margin-top: 72px;
+
+      img {
+        width: 95%;
+      }
+    }
+  }
+  @media screen and(max-width:1300px) {
+    .hero {
+      flex-direction: column;
+
+      .hero_left {
+        h2 {
+          text-align: center;
+          padding-top: 100px;
+        }
+        p {
+          text-align: center;
+          width: auto;
+        }
+        .btns {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .hero_right {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        img {
+          width: 59%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1150px) {
+    padding: 0 5%;
+    nav {
+      .nav_right {
+        ol {
+          display: none;
+        }
+        button {
+          padding: 10px 26px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    padding: 0 3.9%;
+    nav {
+      padding-top: 20px;
+      .burger {
+        display: block;
+      }
+      .nav_left {
+        .logo {
+          img {
+            width: 35px;
+            height: 35px;
+          }
+          h4 {
+            font-size: 30px;
+          }
+        }
+        ol {
+          display: none;
+        }
+      }
+      .nav_right {
+        button {
+          display: none;
+        }
+      }
+    }
+    .hero {
+      .hero_left {
+        h2 {
+          font-size: 7vw;
+          padding-top: 100px;
+        }
+        p {
+          font-size: 3.7vw;
+          padding-top: 20px;
+          font-weight: bold;
+        }
+        .btns {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+      .hero_right {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+
+.dilshod {
+  font-family: "Mulish", sans-serif;
+  .footer {
+    padding: 0 12%;
+    h2 {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #676c70;
+      padding: 0 8px;
+
+      margin-bottom: 1em;
+    }
+    h1 {
+      font-size: 62px;
+      color: #151a1e;
+      text-align: center;
+      font-weight: 900;
+      line-height: 92px;
+      margin-bottom: 1.25em;
+    }
+  }
+  .dilshod_section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    .dilshod_left {
+      margin-top: 150px;
+      h3 {
+        font-size: 23px;
+        font-weight: 600;
+        color: #151a1e;
+        width: max-content;
+      }
+      ol {
+        margin-top: 16px;
+        li {
+          font-size: 16px;
+          color: #151a1e;
+          list-style: none;
+          margin-bottom: 10px;
+          width: max-content;
+        }
+      }
+      p {
+        font-size: 16px;
+        color: #151a1e;
+        margin-top: 6px;
+        width: max-content;
+        a {
+          color: #151a1e;
+        }
+      }
+    }
+    .dilshod_right {
+      margin-top: 75px;
+      img {
+        width: 120%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1260px) {
+    .footer {
+      padding: 0 10%;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .footer {
+      padding: 0 8%;
+
+      h1 {
+        font-size: 6vw;
+        line-height: 8vw;
+      }
+      .dilshod_section {
+        flex-direction: column-reverse;
+        .dilshod_right {
+          margin-top: 40px;
+          img {
+            width: 100%;
+          }
+        }
+        .dilshod_left {
+          margin-top: 50px;
+
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 665px) {
+    .footer {
+      padding: 0 10%;
+      .dilshod_section {
+        .dilshod_left {
+          display: flex;
+          align-content: center;
+          flex-direction: column;
+          br {
+            display: block;
+          }
+          h3 {
+            font-size: 3.8vw;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        .dilshod_right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 120%;
+          }
+        }
+      }
+    }
+  }
+}

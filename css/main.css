@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  padding: 0 7%;
+  font-family: "Mulish", sans-serif;
+}
+header nav {
+  width: 100%;
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .logo {
+  display: flex;
+  align-items: center;
+}
+header nav .logo img {
+  width: 23px;
+  height: 23px;
+}
+header nav .logo h4 {
+  padding-left: 6px;
+  font-size: 22px;
+}
+header nav .nav_left {
+  display: flex;
+  align-items: center;
+  column-gap: 6%;
+}
+header nav .nav_left ol {
+  display: flex;
+  list-style: none;
+  column-gap: 2vw;
+}
+header nav .nav_left ol li {
+  color: #151a1e;
+  font-size: 15px;
+  font-weight: 700;
+}
+header nav .nav_right {
+  display: flex;
+  align-items: center;
+  column-gap: 1vw;
+}
+header nav .nav_right ol {
+  display: flex;
+  list-style: none;
+  column-gap: 2vw;
+}
+header nav .nav_right ol li {
+  color: #151a1e;
+  font-size: 15px;
+  font-weight: 700;
+}
+header nav .nav_right button {
+  padding: 10px 22px;
+  border: none;
+  font-size: 15px;
+  color: #e5edff;
+  background-color: #2250f4;
+  border-radius: 6px;
+}
+header nav .burger {
+  display: none;
+}
+header .hero {
+  display: flex;
+  justify-content: space-between;
+}
+header .hero .hero_left h2 {
+  font-size: 400%;
+  padding-top: 130px;
+  color: #151a1e;
+  font-weight: 900;
+}
+header .hero .hero_left p {
+  font-size: 150%;
+  color: #151a1e;
+  padding-top: 32px;
+  width: max-content;
+}
+header .hero .hero_left .btns {
+  padding-top: 36px;
+}
+header .hero .hero_left .btns button {
+  padding: 8px 24px;
+  font-size: 16px;
+  color: #e5edff;
+  background-color: #2250f4;
+  border: none;
+  border-radius: 6px;
+}
+header .hero .hero_left .btns a {
+  font-size: 16px;
+  color: #151a1e;
+  padding-left: 24px;
+  font-weight: bold;
+}
+header .hero .hero_right {
+  margin-top: 72px;
+}
+header .hero .hero_right img {
+  width: 95%;
+}
+@media screen and (max-width: 1300px) {
+  header .hero {
+    flex-direction: column;
+  }
+  header .hero .hero_left h2 {
+    text-align: center;
+    padding-top: 100px;
+  }
+  header .hero .hero_left p {
+    text-align: center;
+    width: auto;
+  }
+  header .hero .hero_left .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .hero .hero_right {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  header .hero .hero_right img {
+    width: 59%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  header {
+    padding: 0 5%;
+  }
+  header nav .nav_right ol {
+    display: none;
+  }
+  header nav .nav_right button {
+    padding: 10px 26px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 0 3.9%;
+  }
+  header nav {
+    padding-top: 20px;
+  }
+  header nav .burger {
+    display: block;
+  }
+  header nav .nav_left .logo img {
+    width: 35px;
+    height: 35px;
+  }
+  header nav .nav_left .logo h4 {
+    font-size: 30px;
+  }
+  header nav .nav_left ol {
+    display: none;
+  }
+  header nav .nav_right button {
+    display: none;
+  }
+  header .hero .hero_left h2 {
+    font-size: 7vw;
+    padding-top: 100px;
+  }
+  header .hero .hero_left p {
+    font-size: 3.7vw;
+    padding-top: 20px;
+    font-weight: bold;
+  }
+  header .hero .hero_left .btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+  header .hero .hero_right img {
+    width: 100%;
+  }
+}
+
+.dilshod {
+  font-family: "Mulish", sans-serif;
+}
+.dilshod .footer {
+  padding: 0 12%;
+}
+.dilshod .footer h2 {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #676c70;
+  padding: 0 8px;
+  margin-bottom: 1em;
+}
+.dilshod .footer h1 {
+  font-size: 62px;
+  color: #151a1e;
+  text-align: center;
+  font-weight: 900;
+  line-height: 92px;
+  margin-bottom: 1.25em;
+}
+.dilshod .dilshod_section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.dilshod .dilshod_section .dilshod_left {
+  margin-top: 150px;
+}
+.dilshod .dilshod_section .dilshod_left h3 {
+  font-size: 23px;
+  font-weight: 600;
+  color: #151a1e;
+  width: max-content;
+}
+.dilshod .dilshod_section .dilshod_left ol {
+  margin-top: 16px;
+}
+.dilshod .dilshod_section .dilshod_left ol li {
+  font-size: 16px;
+  color: #151a1e;
+  list-style: none;
+  margin-bottom: 10px;
+  width: max-content;
+}
+.dilshod .dilshod_section .dilshod_left p {
+  font-size: 16px;
+  color: #151a1e;
+  margin-top: 6px;
+  width: max-content;
+}
+.dilshod .dilshod_section .dilshod_left p a {
+  color: #151a1e;
+}
+.dilshod .dilshod_section .dilshod_right {
+  margin-top: 75px;
+}
+.dilshod .dilshod_section .dilshod_right img {
+  width: 120%;
+}
+@media screen and (max-width: 1260px) {
+  .dilshod .footer {
+    padding: 0 10%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .dilshod .footer {
+    padding: 0 8%;
+  }
+  .dilshod .footer h1 {
+    font-size: 6vw;
+    line-height: 8vw;
+  }
+  .dilshod .footer .dilshod_section {
+    flex-direction: column-reverse;
+  }
+  .dilshod .footer .dilshod_section .dilshod_right {
+    margin-top: 40px;
+  }
+  .dilshod .footer .dilshod_section .dilshod_right img {
+    width: 100%;
+  }
+  .dilshod .footer .dilshod_section .dilshod_left {
+    margin-top: 50px;
+  }
+  .dilshod .footer .dilshod_section .dilshod_left br {
+    display: none;
+  }
+}
+@media screen and (max-width: 665px) {
+  .dilshod .footer {
+    padding: 0 10%;
+  }
+  .dilshod .footer .dilshod_section .dilshod_left {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+  }
+  .dilshod .footer .dilshod_section .dilshod_left br {
+    display: block;
+  }
+  .dilshod .footer .dilshod_section .dilshod_left h3 {
+    font-size: 3.8vw;
+  }
+  .dilshod .footer .dilshod_section .dilshod_left p {
+    font-size: 12px;
+  }
+  .dilshod .footer .dilshod_section .dilshod_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dilshod .footer .dilshod_section .dilshod_right img {
+    width: 120%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
